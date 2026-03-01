@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kindertagespflege Goldschatz – liebevolle Betreuung für Kinder von 1–3 Jahren in Düsseldorf. Mo–Fr 8–15 Uhr. Über 10 Jahre Erfahrung, seit 2025 LVR-zertifizierte Inklusionstagesmutter." />
+  <meta name="theme-color" content="#fac13f" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://goldschatz-kindertagespflege.de/" />
+  <title>Kindertagespflege Goldschatz Düsseldorf | Tagesmutter für Kinder 1–3 Jahre</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kindertagespflege Goldschatz – Düsseldorf" />
+  <meta property="og:description" content="Liebevolle Betreuung für Kinder von 1–3 Jahren. Mo–Fr 8–15 Uhr. Über 10 Jahre Erfahrung, LVR-zertifizierte Inklusionstagesmutter." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ChildCare","name":"Kindertagespflege Goldschatz","description":"Liebevolle Kindertagespflege für Kinder von 1–3 Jahren in Düsseldorf.","address":{"@type":"PostalAddress","streetAddress":"Hohenzollernstr. 24","addressLocality":"Düsseldorf","postalCode":"40211","addressCountry":"DE"},"telephone":"+4917634045688","openingHours":"Mo-Fr 08:00-15:00","areaServed":{"@type":"City","name":"Düsseldorf"}}
+  </script>
+
+  <script defer src="./assets/script.js"></script>
+
+  <link rel="icon" href="./favicon.ico">
+
+  <link rel="stylesheet" href="./assets/output.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+
+<body class="font-body text-ink-700 bg-bg antialiased overflow-x-hidden">
+
+  <!-- ── Header ────────────────────────────── -->
+  <header id="site-header" class="sticky top-[0px] z-[200] bg-bg/[0.92] backdrop-blur-xl border-b border-black/[0.06] transition-shadow duration-300">
+    <nav class="flex items-center justify-between gap-6 px-5 md:px-8 py-3.5 max-w-[1180px] mx-auto" aria-label="Hauptnavigation">
+      <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="Goldschatz Startseite">
+        <div class="w-[38px] h-[38px] flex items-center justify-center"><img src="./img/Goldschatz Logo.svg"></div>
+        <span class="font-display font-bold text-[1.35rem] text-ink-900 tracking-tight">Goldschatz</span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-1" role="list">
+        <li><a href="#angebot"    class="nav-link px-3.5 py-2 rounded-full font-bold text-sm text-ink-700 hover:bg-gold-100 hover:text-ink-900 transition-colors">Angebot</a></li>
+        <li><a href="#einblicke"  class="nav-link px-3.5 py-2 rounded-full font-bold text-sm text-ink-700 hover:bg-gold-100 hover:text-ink-900 transition-colors">Einblicke</a></li>
+        <li><a href="#paedagogik" class="nav-link px-3.5 py-2 rounded-full font-bold text-sm text-ink-700 hover:bg-gold-100 hover:text-ink-900 transition-colors">Pädagogik</a></li>
+        <li><a href="#inklusion"  class="nav-link px-3.5 py-2 rounded-full font-bold text-sm text-ink-700 hover:bg-gold-100 hover:text-ink-900 transition-colors">Inklusion</a></li>
+        <li><a href="#zeiten"     class="nav-link px-3.5 py-2 rounded-full font-bold text-sm text-ink-700 hover:bg-gold-100 hover:text-ink-900 transition-colors">Zeiten</a></li>
+        <li class="ml-2"><a href="#kontakt" class="px-5 py-2.5 bg-coral-400 hover:bg-coral-500 text-white rounded-full font-extrabold text-sm transition-all hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(243,104,86,0.3)]">Platz anfragen</a></li>
+      </ul>
+      <button id="mobile-menu-btn" class="mobile-menu-btn lg:hidden flex flex-col gap-[5px] p-2 rounded-lg" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="burger-line block w-6 h-0.5 bg-ink-700 rounded-sm"></span>
+        <span class="burger-line block w-6 h-0.5 bg-ink-700 rounded-sm"></span>
+        <span class="burger-line block w-6 h-0.5 bg-ink-700 rounded-sm"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── Mobile Overlay & Drawer (direkt in <body>, außerhalb <header>) ── -->
+  <div id="mobile-overlay" class="fixed inset-0 z-[300] hidden bg-black/40 transition-opacity duration-300 opacity-0" aria-hidden="true"></div>
+  <aside
+    id="mobile-drawer"
+    class="fixed inset-y-0 right-0 z-[400] w-[min(340px,90vw)] bg-bg shadow-lg translate-x-full transition-transform duration-300 flex flex-col"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation"
+    aria-hidden="true">
+    <div class="flex items-center justify-between px-6 py-5 border-b border-ink-100">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 flex items-center justify-center"><img src="./img/Goldschatz Logo.svg"></div>
+        <span class="font-display font-bold text-ink-900">Goldschatz</span>
+      </div>
+      <button id="drawer-close" class="w-9 h-9 flex items-center justify-center rounded-full bg-ink-100 hover:bg-peach-200 transition-colors" aria-label="Menü schließen" type="button">
+        <svg class="w-5 h-5 text-ink-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <ul class="flex-1 min-h-0 px-4 py-4 overflow-y-auto" role="list">
+      <li><a href="#angebot"    class="drawer-link flex items-center gap-3 px-4 py-3.5 rounded-xl font-bold text-ink-700 hover:bg-gold-100 transition-colors"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"/></svg>Angebot</a></li>
+      <li><a href="#einblicke"  class="drawer-link flex items-center gap-3 px-4 py-3.5 rounded-xl font-bold text-ink-700 hover:bg-gold-100 transition-colors"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd"/></svg>Einblicke</a></li>
+      <li><a href="#paedagogik" class="drawer-link flex items-center gap-3 px-4 py-3.5 rounded-xl font-bold text-ink-700 hover:bg-gold-100 transition-colors"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z"/></svg>Pädagogik</a></li>
+      <li><a href="#inklusion"  class="drawer-link flex items-center gap-3 px-4 py-3.5 rounded-xl font-bold text-ink-700 hover:bg-gold-100 transition-colors"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z"/></svg>Inklusion</a></li>
+      <li><a href="#zeiten"     class="drawer-link flex items-center gap-3 px-4 py-3.5 rounded-xl font-bold text-ink-700 hover:bg-gold-100 transition-colors"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd"/></svg>Zeiten</a></li>
+    </ul>
+    <div class="flex flex-col gap-3 px-6 pb-8 pt-4 border-t border-ink-100">
+      <a href="#kontakt" class="drawer-link flex items-center justify-center gap-2 py-3.5 bg-coral-400 hover:bg-coral-500 text-white rounded-full font-extrabold text-sm transition-colors">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg>
+        Platz anfragen
+      </a>
+      <a href="tel:017634045688" class="flex items-center justify-center gap-2 py-3.5 bg-gold-100 hover:bg-gold-200 border border-gold-300 text-ink-900 rounded-full font-bold text-sm transition-colors">
+        <svg class="w-4 h-4 text-coral-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd"/></svg>
+        0176 34045688
+      </a>
+    </div>
+  </aside>
+
+  <!-- ── Hero ──────────────────────────────── -->
+  <section id="top" class="relative overflow-hidden pt-12 pb-20 bg-bg-warm" aria-label="Willkommen">
+    <div class="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+      <div class="absolute w-[500px] h-[500px] rounded-full blur-[70px] opacity-50 bg-gold-300 -top-24 -left-24"></div>
+      <div class="absolute w-[350px] h-[350px] rounded-full blur-[70px] opacity-25 bg-peach-400 top-20 -right-16"></div>
+      <img src="./img/sunbg.svg" alt="" class="absolute bottom-[-40px] right-[-60px] opacity-[0.28] -rotate-[15deg]" style="width:clamp(200px,35vw,480px)" loading="eager" width="480" height="320" />
+    </div>
+    <div class="relative z-10 max-w-[1180px] mx-auto px-5 md:px-8 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+      <div data-animate="fade-up">
+        <h1 class="font-display font-bold leading-[1.1] tracking-tight text-ink-900 mb-5" style="font-size:clamp(2.4rem,5.5vw + 0.5rem,4.2rem)">
+          Kindertages<wbr>pflege<br>
+          <em class="italic text-coral-400 not-italic" style="font-style:italic">Goldschatz</em><br>
+          <small>in der Hohenzollernstr.</small>
+        </h1>
+        <p class="text-ink-700 leading-relaxed mb-7 max-w-[55ch]" style="font-size:clamp(1rem,1.5vw + 0.3rem,1.2rem)">
+          Ein fröhlicher Ort zum <strong>Lachen, Spielen</strong> und <strong>Wachsen</strong> für Kinder von 1-3 Jahren. Hier finden die kleinen Goldschätze einen kuscheligen Platz voller Wärme, Geborgenheit und Freude.
+        </p>
+        <div class="flex gap-3 flex-wrap mb-10">
+          <a href="#kontakt" class="inline-flex items-center gap-2 px-8 py-4 bg-coral-400 hover:bg-coral-500 text-white rounded-full font-extrabold text-base transition-all hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(243,104,86,0.35)]">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg>
+            Platz anfragen
+          </a>
+          <a href="tel:017634045688" class="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-[1.5px] border-ink-300 hover:bg-gold-100 hover:border-gold-400 text-ink-700 rounded-full font-bold text-base transition-all">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd"/></svg>
+            Anrufen
+          </a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3 px-4 py-3 bg-white/85 border border-black/[0.06] rounded-2xl backdrop-blur-sm">
+            <svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg>
+            <div><strong class="block text-sm text-ink-900 leading-snug">Über 10 Jahre Erfahrung</strong><span class="text-xs text-ink-500">Qualifizierte Tagesmutter</span></div>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-3 bg-white/85 border border-black/[0.06] rounded-2xl backdrop-blur-sm">
+            <svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+            <div><strong class="block text-sm text-ink-900 leading-snug">LVR-zertifizierte Inklusionstagesmutter</strong><span class="text-xs text-ink-500">Seit 2025</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4" data-animate="fade-up" data-delay="100">
+        <div class="rounded-3xl overflow-hidden shadow-lg relative">
+          <img src="./img/blick-in-tagesstätte.png" alt="Blick in die Kindertagespflege Goldschatz – heller freundlicher Spielraum" loading="eager" width="800" height="530" fetchpriority="high" class="w-full h-[260px] object-cover" />
+          <div class="absolute bottom-4 left-4 flex items-center gap-2 px-4 py-1.5 bg-white/92 rounded-full text-sm font-bold text-ink-900 backdrop-blur-sm">
+            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+            Ein Blick in die Tagesstätte
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-soft border border-black/[0.04]">
+          <h2 class="font-display font-bold text-ink-900 mb-4">Was euch erwartet</h2>
+          <ul class="flex flex-col gap-2.5 mb-5" role="list">
+            <li class="flex items-center gap-3 font-semibold text-sm"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg>Liebevolle, geborgene Umgebung</li>
+            <li class="flex items-center gap-3 font-semibold text-sm"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg>Kindgerechte Möbel & Spielecken</li>
+            <li class="flex items-center gap-3 font-semibold text-sm"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg>Viel Bewegung drinnen & draußen</li>
+            <li class="flex items-center gap-3 font-semibold text-sm"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg>Forschen & Entdecken</li>
+            <li class="flex items-center gap-3 font-semibold text-sm"><svg class="w-5 h-5 text-coral-400 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg>Selbständigkeit im Alltag erleben</li>
+          </ul>
+          <div class="flex items-center justify-between gap-4 pt-4 border-t border-ink-100">
+            <div><strong class="block text-sm">Unverbindlich anfragen</strong><span class="text-xs text-ink-500">Wir melden uns zeitnah zurück.</span></div>
+            <a href="#kontakt" class="px-5 py-2.5 bg-coral-400 hover:bg-coral-500 text-white rounded-full font-extrabold text-sm transition-colors whitespace-nowrap">Start →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ── Angebot ────────────────────────── -->
+    <section id="angebot" class="relative py-20 bg-bg-warm overflow-hidden" aria-labelledby="angebot-heading">
+      <div class="absolute bottom-[-20px] left-[-40px] opacity-10 pointer-events-none" aria-hidden="true"><img src="./img/sunbg.svg" alt="" loading="lazy" width="300" height="200" /></div>
+      <div class="max-w-[1180px] mx-auto px-5 md:px-8">
+        <div class="max-w-[680px] mb-10">
+          <div class="pill-label">Unser Angebot</div>
+          <h2 id="angebot-heading" class="section-title">Betreuung mit Herz<br><em class="italic text-coral-400">und Struktur</em></h2>
+          <p class="text-ink-500">Eine kleine, geschützte Gruppe und ein Alltag, der Sicherheit gibt – mit Raum für Spiel, Bewegung und Entwicklung.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <article class="feature-card" data-animate="fade-up" data-delay="0"><div class="feature-icon"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"/><path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"/></svg></div><h3 class="font-display font-bold text-ink-900 mb-2">Liebevolle Umgebung</h3><p class="text-sm text-ink-500">Wärme, Geborgenheit und feste Rituale – damit Kinder sich sicher und gesehen fühlen.</p></article>
+          <article class="feature-card" data-animate="fade-up" data-delay="60"><div class="feature-icon"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd"/></svg></div><h3 class="font-display font-bold text-ink-900 mb-2">Spielecken & Material</h3><p class="text-sm text-ink-500">Kindgerechte Möbel, verschiedene Spielecken und Anreize zum kreativen Spielen.</p></article>
+          <article class="feature-card" data-animate="fade-up" data-delay="120"><div class="feature-icon"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v5.69a.75.75 0 0 0 1.5 0v-5.69l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z" clip-rule="evenodd"/></svg></div><h3 class="font-display font-bold text-ink-900 mb-2">Bewegung drinnen & draußen</h3><p class="text-sm text-ink-500">Viel Bewegung, frische Luft und altersgerechte Aktivitäten für kleine Entdecker.</p></article>
+          <article class="feature-card" data-animate="fade-up" data-delay="180"><div class="feature-icon"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z"/></svg></div><h3 class="font-display font-bold text-ink-900 mb-2">Forschen & Entdecken</h3><p class="text-sm text-ink-500">Neugier fördern: einfache Experimente, Sinneserfahrungen und Materialien zum Ausprobieren.</p></article>
+          <article class="feature-card" data-animate="fade-up" data-delay="240"><div class="feature-icon"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z"/><path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z"/></svg></div><h3 class="font-display font-bold text-ink-900 mb-2">Selbständigkeit im Alltag</h3><p class="text-sm text-ink-500">Schritt für Schritt: Anziehen, Essen, Aufräumen – durch Erleben und Mitmachen lernen.</p></article>
+          <article class="feature-card" data-animate="fade-up" data-delay="300"><div class="feature-icon"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd"/></svg></div><h3 class="font-display font-bold text-ink-900 mb-2">Fröhlicher Alltag</h3><p class="text-sm text-ink-500">Ein Ort zum Lachen, Spielen und Wachsen – jedes Kind darf in seinem Tempo groß werden.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Einblicke ──────────────────────── -->
+    <section id="einblicke" class="py-20 bg-white" aria-labelledby="einblicke-heading">
+      <div class="max-w-[1180px] mx-auto px-5 md:px-8">
+        <div class="max-w-[680px] mb-10">
+          <div class="pill-label">Galerie</div>
+          <h2 id="einblicke-heading" class="section-title">Einblicke in die<br><em class="italic text-coral-400">Tagesstätte</em></h2>
+          <p class="text-ink-500">Eindrücke aus den Räumen, Spielecken und dem Alltag.</p>
+        </div>
+        <div class="gallery-grid" role="list">
+          <figure class="gallery-item gallery-item--large" role="listitem"><img src="./img/spielbereich.png" alt="Heller Spielbereich mit kindgerechten Ecken" loading="lazy" width="800" height="533" /><figcaption><strong class="block text-sm">Spielbereich</strong><span class="text-xs opacity-85">Ruhige und aktive Spielecken</span></figcaption></figure>
+          <figure class="gallery-item" role="listitem"><img src="./img/leseecke.png" alt="Gemütliche Leseecke" loading="lazy" width="600" height="400" /><figcaption><strong class="block text-sm">Leseecke</strong><span class="text-xs opacity-85">Vorlesen & Kuschelzeit</span></figcaption></figure>
+          <figure class="gallery-item" role="listitem"><img src="./img/bewegung-drinnen.png" alt="Kinder beim Klettern drinnen" loading="lazy" width="600" height="400" /><figcaption><strong class="block text-sm">Bewegung drinnen</strong><span class="text-xs opacity-85">Klettern, Balancieren, Toben</span></figcaption></figure>
+          <figure class="gallery-item" role="listitem"><img src="./img/kreativecke.png" alt="Kreativecke mit Malutensilien" loading="lazy" width="600" height="400" /><figcaption><strong class="block text-sm">Kreativecke</strong><span class="text-xs opacity-85">Malen, Basteln & Sinneserfahrungen</span></figcaption></figure>
+          <figure class="gallery-item" role="listitem"><img src="./img/forschen-entdecken.png" alt="Kinder beim Forschen" loading="lazy" width="600" height="400" /><figcaption><strong class="block text-sm">Forschen & Entdecken</strong><span class="text-xs opacity-85">Neugier durch Ausprobieren</span></figcaption></figure>
+          <figure class="gallery-item" role="listitem"><img src="./img/draussen-unterwegs.png" alt="Kinder draußen beim Spielen" loading="lazy" width="600" height="400" /><figcaption><strong class="block text-sm">Draußen unterwegs</strong><span class="text-xs opacity-85">Frische Luft & Bewegung</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pädagogik ──────────────────────── -->
+    <section id="paedagogik" class="py-20 bg-bg-warm" aria-labelledby="paedagogik-heading">
+      <div class="max-w-[1180px] mx-auto px-5 md:px-8">
+        <div class="max-w-[680px] mb-10">
+          <div class="pill-label">Pädagogik</div>
+          <h2 id="paedagogik-heading" class="section-title">Wie Kinder bei uns<br><em class="italic text-coral-400">lernen & wachsen</em></h2>
+          <p class="text-ink-500">Bindung, Sicherheit und Freispiel als Fundament – plus Impulse zum Entdecken.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
+          <div class="bg-white rounded-[2rem] p-8 shadow-soft" data-animate="fade-up">
+            <h3 class="font-display font-bold text-ink-900 mb-6">So lernen die Goldschätze bei uns</h3>
+            <ul class="flex flex-col gap-4" role="list">
+              <li class="flex gap-4 items-start text-sm text-ink-700"><div class="w-9 h-9 shrink-0 rounded-lg bg-gold-100 flex items-center justify-center mt-0.5"><svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd"/></svg></div><div><strong>Freispiel</strong> als Lernmotor: Kinder wählen selbst, vertiefen sich, üben soziale Fähigkeiten.</div></li>
+              <li class="flex gap-4 items-start text-sm text-ink-700"><div class="w-9 h-9 shrink-0 rounded-lg bg-gold-100 flex items-center justify-center mt-0.5"><svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.755 10.059a7.5 7.5 0 0 1 12.548-3.364l1.903 1.903h-3.183a.75.75 0 1 0 0 1.5h4.992a.75.75 0 0 0 .75-.75V4.356a.75.75 0 0 0-1.5 0v3.18l-1.9-1.9A9 9 0 0 0 3.306 9.67a.75.75 0 1 0 1.45.388Zm15.408 3.352a.75.75 0 0 0-.919.53 7.5 7.5 0 0 1-12.548 3.364l-1.902-1.903h3.183a.75.75 0 0 0 0-1.5H2.984a.75.75 0 0 0-.75.75v4.992a.75.75 0 0 0 1.5 0v-3.18l1.9 1.9a9 9 0 0 0 15.059-4.035.75.75 0 0 0-.53-.918Z" clip-rule="evenodd"/></svg></div><div><strong>Rituale</strong> geben Orientierung: Ankommen, Mahlzeiten, Ruhezeiten, Abschied.</div></li>
+              <li class="flex gap-4 items-start text-sm text-ink-700"><div class="w-9 h-9 shrink-0 rounded-lg bg-gold-100 flex items-center justify-center mt-0.5"><svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-.53 14.03a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V8.25a.75.75 0 0 0-1.5 0v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3Z" clip-rule="evenodd"/></svg></div><div><strong>Sprachförderung</strong> im Alltag: Vorlesen, Singen, Begleiten von Handlungen.</div></li>
+              <li class="flex gap-4 items-start text-sm text-ink-700"><div class="w-9 h-9 shrink-0 rounded-lg bg-gold-100 flex items-center justify-center mt-0.5"><svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd"/></svg></div><div><strong>Bewegung</strong> als Basis: Klettern, Balancieren, Toben – altersgerecht und sicher.</div></li>
+              <li class="flex gap-4 items-start text-sm text-ink-700"><div class="w-9 h-9 shrink-0 rounded-lg bg-gold-100 flex items-center justify-center mt-0.5"><svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z"/></svg></div><div><strong>Forschen & Entdecken</strong>: Sinnesmaterial, Naturbeobachtung, kleine Experimente.</div></li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-5" data-animate="fade-up" data-delay="100">
+            <blockquote class="relative bg-coral-400 text-white rounded-[2rem] p-8 overflow-hidden">
+              <span class="absolute top-4 left-5 font-display text-[6rem] leading-none opacity-20 pointer-events-none select-none" aria-hidden="true">"</span>
+              <p class="font-display italic text-[1.1rem] leading-relaxed relative z-10 text-white max-w-none">„Hier finden die kleinen Goldschätze einen kuscheligen Platz voller Wärme, Geborgenheit und Freude."</p>
+              <cite class="block mt-4 text-sm opacity-80 not-italic">— Kindertagespflege Goldschatz</cite>
+            </blockquote>
+            <div class="flex flex-col gap-3">
+              <div class="flex gap-4 items-start p-4 bg-white rounded-2xl border border-gold-200"><svg class="w-5 h-5 text-coral-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M11.054 2.678a1.5 1.5 0 0 1 1.892 0 11.25 11.25 0 0 0 7.83 2.813.75.75 0 0 1 .771.771 17.25 17.25 0 0 1-3.684 10.987l-.008.009-.017.02-.014.012a1.5 1.5 0 0 1-1.962.125 13.5 13.5 0 0 1-3.862-4.415 13.5 13.5 0 0 1-3.862 4.415 1.5 1.5 0 0 1-1.962-.125l-.014-.012-.017-.02-.008-.009A17.25 17.25 0 0 1 2.453 6.262a.75.75 0 0 1 .771-.771 11.25 11.25 0 0 0 7.83-2.813Z" clip-rule="evenodd"/></svg><div><strong class="block text-sm mb-0.5">Transparente Kommunikation</strong><span class="text-xs text-ink-500">Kurze Updates, klare Absprachen, verlässliche Struktur.</span></div></div>
+              <div class="flex gap-4 items-start p-4 bg-white rounded-2xl border border-gold-200"><svg class="w-5 h-5 text-coral-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.75H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5h3A2.25 2.25 0 0 0 11.25 8.25V6A2.25 2.25 0 0 0 9 3.75Zm9.75 0H12v6.75h6.75A2.25 2.25 0 0 0 21 8.25V6a2.25 2.25 0 0 0-2.25-2.25Zm-9.75 9.75H6A2.25 2.25 0 0 0 3.75 15.75V18A2.25 2.25 0 0 0 6 20.25h3A2.25 2.25 0 0 0 11.25 18v-2.25A2.25 2.25 0 0 0 9 13.5Zm9.75 0H12V20.25h6.75A2.25 2.25 0 0 0 21 18v-2.25A2.25 2.25 0 0 0 18.75 13.5Z" clip-rule="evenodd"/></svg><div><strong class="block text-sm mb-0.5">Sicherheit & Wohlbefinden</strong><span class="text-xs text-ink-500">Altersgerechte Umgebung und achtsame Begleitung.</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Inklusion ──────────────────────── -->
+    <section id="inklusion" class="relative py-20 bg-ink-900 overflow-hidden" aria-labelledby="inklusion-heading">
+      <div class="absolute -top-24 -right-24 w-[500px] h-[500px] rounded-full bg-gold-400/10 blur-[80px] pointer-events-none" aria-hidden="true"></div>
+      <div class="max-w-[1180px] mx-auto px-5 md:px-8">
+        <div class="max-w-[600px] mb-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-gold-400/15 border border-gold-400/30 rounded-full text-xs font-bold text-gold-300 mb-4">Inklusion</div>
+          <h2 id="inklusion-heading" class="font-display font-bold tracking-tight text-white mb-3" style="font-size:clamp(1.75rem,3vw + 0.75rem,2.75rem)">Jedes Kind<br><em class="italic text-gold-300">ist willkommen</em></h2>
+          <p class="text-white/75 max-w-none">Seit 2025 <strong class="text-white">LVR-zertifizierte Inklusionstagesmutter</strong>. Jedes Kind wird in seiner Individualität gesehen und begleitet.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+          <div class="bg-white/[0.06] border border-white/10 rounded-[2rem] p-8 hover:bg-white/[0.09] hover:border-gold-400/30 transition-all duration-250" data-animate="fade-up">
+            <div class="w-[52px] h-[52px] rounded-2xl bg-gold-400/15 flex items-center justify-center mb-5"><svg class="w-6 h-6 text-gold-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z"/></svg></div>
+            <h3 class="font-display font-bold text-white mb-3">Individuell begleiten</h3>
+            <p class="text-white/70 text-sm max-w-none">Feinfühlige Haltung, angepasste Materialien und ein ruhiger Rahmen helfen Kindern, Fortschritte im eigenen Tempo zu machen.</p>
+          </div>
+          <div class="bg-white/[0.06] border border-white/10 rounded-[2rem] p-8 hover:bg-white/[0.09] hover:border-gold-400/30 transition-all duration-250" data-animate="fade-up" data-delay="80">
+            <div class="w-[52px] h-[52px] rounded-2xl bg-gold-400/15 flex items-center justify-center mb-5"><svg class="w-6 h-6 text-gold-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M11.054 2.678a1.5 1.5 0 0 1 1.892 0 11.25 11.25 0 0 0 7.83 2.813.75.75 0 0 1 .771.771 17.25 17.25 0 0 1-3.684 10.987l-.008.009-.017.02-.014.012a1.5 1.5 0 0 1-1.962.125 13.5 13.5 0 0 1-3.862-4.415 13.5 13.5 0 0 1-3.862 4.415 1.5 1.5 0 0 1-1.962-.125l-.014-.012-.017-.02-.008-.009A17.25 17.25 0 0 1 2.453 6.262a.75.75 0 0 1 .771-.771 11.25 11.25 0 0 0 7.83-2.813Z" clip-rule="evenodd"/></svg></div>
+            <h3 class="font-display font-bold text-white mb-3">Zusammenarbeit</h3>
+            <p class="text-white/70 text-sm max-w-none">Enge Abstimmung mit Eltern und (nach Absprache) beteiligten Stellen, um eine passende Unterstützung im Alltag zu ermöglichen.</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-6 flex-wrap p-6 md:p-8 bg-white/[0.06] border border-gold-400/25 rounded-[2rem]" data-animate="fade-up" data-delay="160">
+          <div class="flex items-start gap-4">
+            <svg class="w-5 h-5 text-gold-300 mt-1 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z" clip-rule="evenodd"/></svg>
+            <div><strong class="block text-white mb-1">Fragen zur Betreuung mit Inklusionsbedarf?</strong><span class="text-sm text-white/65">Schreibt uns kurz – wir klären unverbindlich, was möglich ist.</span></div>
+          </div>
+          <a href="#kontakt" class="inline-flex items-center gap-2 px-6 py-3 bg-coral-400 hover:bg-coral-500 text-white rounded-full font-extrabold text-sm transition-colors whitespace-nowrap">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Zeiten ─────────────────────────── -->
+    <section id="zeiten" class="py-20 bg-white" aria-labelledby="zeiten-heading">
+      <div class="max-w-[1180px] mx-auto px-5 md:px-8">
+        <div class="max-w-[680px] mb-10">
+          <div class="pill-label">Zeiten & Ablauf</div>
+          <h2 id="zeiten-heading" class="section-title">Verlässlich<br><em class="italic text-coral-400">und familienfreundlich</em></h2>
+          <p class="text-ink-500">Planbare Betreuungszeiten, klare Abläufe und eine sanfte Eingewöhnung.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 items-start">
+          <div class="bg-bg-warm rounded-[2rem] p-8 border border-gold-200" data-animate="fade-up">
+            <div class="flex gap-5 items-center mb-6 pb-6 border-b border-gold-200">
+              <div class="w-[60px] h-[60px] shrink-0 rounded-2xl bg-gold-300 flex items-center justify-center"><svg class="w-7 h-7 text-[#3a2a00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd"/></svg></div>
+              <div>
+                <div class="text-xs font-bold text-ink-500 uppercase tracking-widest mb-1">Betreuungszeit</div>
+                <div class="font-display font-bold text-[1.35rem] text-ink-900">Mo–Fr · 08:00–15:00 Uhr</div>
+                <div class="text-sm text-ink-500">Für Kinder von 1–3 Jahren</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <div class="flex gap-3 items-start p-4 bg-white rounded-2xl border border-gold-200"><svg class="w-5 h-5 text-coral-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd"/></svg><div><strong class="block text-xs mb-0.5">Kernzeit</strong><span class="text-xs text-ink-500">08:00–15:00 Uhr</span></div></div>
+              <div class="flex gap-3 items-start p-4 bg-white rounded-2xl border border-gold-200"><svg class="w-5 h-5 text-coral-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd"/></svg><div><strong class="block text-xs mb-0.5">Aufnahme</strong><span class="text-xs text-ink-500">Nach Kapazität</span></div></div>
+            </div>
+            <p class="flex gap-2 items-start text-xs text-ink-500 max-w-none"><svg class="w-4 h-4 text-gold-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd"/></svg>Für eine gute Eingewöhnung planen wir genug Zeit ein – individuell und in Abstimmung mit den Eltern.</p>
+          </div>
+          <div class="bg-white rounded-[2rem] p-8 shadow-soft" data-animate="fade-up" data-delay="100">
+            <h3 class="font-display font-bold text-ink-900 mb-6">So läuft die Anfrage ab</h3>
+            <ol class="flex flex-col gap-4 mb-6" role="list">
+              <li class="flex gap-4 items-start text-sm"><div class="w-8 h-8 shrink-0 rounded-full bg-coral-400 text-white flex items-center justify-center font-extrabold text-xs mt-0.5">1</div><div><strong>Kurze Nachricht</strong> mit Alter des Kindes und Wunschstart</div></li>
+              <li class="flex gap-4 items-start text-sm"><div class="w-8 h-8 shrink-0 rounded-full bg-coral-400 text-white flex items-center justify-center font-extrabold text-xs mt-0.5">2</div><div><strong>Telefonisches Kennenlernen</strong> (wenn gewünscht)</div></li>
+              <li class="flex gap-4 items-start text-sm"><div class="w-8 h-8 shrink-0 rounded-full bg-coral-400 text-white flex items-center justify-center font-extrabold text-xs mt-0.5">3</div><div><strong>Persönlicher Termin</strong> & Besichtigung vor Ort</div></li>
+              <li class="flex gap-4 items-start text-sm"><div class="w-8 h-8 shrink-0 rounded-full bg-coral-400 text-white flex items-center justify-center font-extrabold text-xs mt-0.5">4</div><div><strong>Eingewöhnung</strong> und gemeinsamer Start</div></li>
+            </ol>
+            <a href="#kontakt" class="flex items-center justify-center gap-2 w-full py-3.5 bg-coral-400 hover:bg-coral-500 text-white rounded-full font-extrabold text-sm transition-colors">Anfrage senden</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────── -->
+    <section class="py-20 bg-bg-warm" aria-labelledby="faq-heading">
+      <div class="max-w-[1180px] mx-auto px-5 md:px-8">
+        <div class="max-w-[680px] mb-10">
+          <div class="pill-label">FAQ</div>
+          <h2 id="faq-heading" class="section-title">Häufige<br><em class="italic text-coral-400">Fragen</em></h2>
+        </div>
+        <div class="flex flex-col gap-2 max-w-[780px]">
+          <details class="faq-item"><summary class="faq-question"><span>Für welches Alter ist die Betreuung?</span><svg class="faq-icon w-5 h-5 text-ink-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg></summary><div class="px-6 pb-5 text-sm text-ink-700">Kinder im Alter von <strong>1 bis 3 Jahren</strong>.</div></details>
+          <details class="faq-item"><summary class="faq-question"><span>Welche Zeiten werden angeboten?</span><svg class="faq-icon w-5 h-5 text-ink-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg></summary><div class="px-6 pb-5 text-sm text-ink-700">Montag bis Freitag von <strong>08:00 bis 15:00 Uhr</strong>.</div></details>
+          <details class="faq-item"><summary class="faq-question"><span>Wie ist der Alltag gestaltet?</span><svg class="faq-icon w-5 h-5 text-ink-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg></summary><div class="px-6 pb-5 text-sm text-ink-700">Mit festen Ritualen, viel Freispiel, Bewegung drinnen und draußen sowie Impulsen zum Forschen und Entdecken.</div></details>
+          <details class="faq-item"><summary class="faq-question"><span>Gibt es Inklusionskompetenz?</span><svg class="faq-icon w-5 h-5 text-ink-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg></summary><div class="px-6 pb-5 text-sm text-ink-700">Ja – seit 2025 <strong>LVR-zertifizierte Inklusionstagesmutter</strong>. Bitte kontaktiert uns für eine unverbindliche Einschätzung.</div></details>
+          <details class="faq-item"><summary class="faq-question"><span>Wie läuft die Eingewöhnung ab?</span><svg class="faq-icon w-5 h-5 text-ink-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg></summary><div class="px-6 pb-5 text-sm text-ink-700">Individuell geplant – in enger Abstimmung mit den Eltern, damit euer Kind in seinem eigenen Tempo ankommen kann.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Kontakt ────────────────────────── -->
+    <section id="kontakt" class="py-20 bg-white" aria-labelledby="kontakt-heading">
+      <div class="max-w-[1180px] mx-auto px-5 md:px-8">
+        <div class="max-w-[680px] mb-10">
+          <div class="pill-label">Kontakt</div>
+          <h2 id="kontakt-heading" class="section-title">Jetzt<br><em class="italic text-coral-400">Platz anfragen</em></h2>
+          <p class="text-ink-500">Schreibt uns kurz – am besten mit Alter des Kindes, Wunschstart und euren Fragen.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
+
+        <div class="bg-bg-warm rounded-[2rem] p-6 border border-gold-200">
+            <h3 class="font-display font-bold text-ink-900 mb-4">Kontaktdetails</h3>
+            <a href="tel:017634045688" class="flex items-center gap-4 p-3 -mx-2 rounded-2xl hover:bg-gold-100 transition-colors border-b border-gold-200 mb-1">
+              <div class="w-10 h-10 shrink-0 rounded-xl bg-gold-200 flex items-center justify-center"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd"/></svg></div>
+              <div><strong class="block text-xs mb-0.5">Telefon</strong><span class="text-sm text-ink-700">0176 340 45688</span></div>
+              <svg class="w-4 h-4 text-ink-300 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+            <a href="mailto:kontakt@goldschatz-kindertagespflege.de" class="flex items-center gap-4 p-3 -mx-2 rounded-2xl hover:bg-gold-100 transition-colors border-b border-gold-200 mb-1">
+              <span id="mail-link"></span>
+              <svg class="w-4 h-4 text-ink-300 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+            <div class="flex items-start gap-4 py-3 border-b border-gold-200">
+              <div class="w-10 h-10 shrink-0 rounded-xl bg-gold-200 flex items-center justify-center mt-0.5"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-2.003 3.5-4.697 3.5-8.327a8 8 0 1 0-16 0c0 3.63 1.556 6.326 3.5 8.327a19.585 19.585 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/></svg></div>
+              <div><strong class="block text-xs mb-0.5">Adresse</strong><span class="text-sm text-ink-700">Hohenzollernstr. 24, 40211 Düsseldorf</span></div>
+            </div>
+            <div class="flex items-start gap-4 py-3 border-gold-200">
+              <div class="w-10 h-10 shrink-0 rounded-xl bg-gold-200 flex items-center justify-center mt-0.5"><svg class="w-5 h-5 text-[#5a3e00]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd"/></svg></div>
+              <div><strong class="block text-xs mb-0.5">Betreuungszeiten</strong><span class="text-sm text-ink-700">Mo.–Fr. 08:00–15:00 Uhr</span></div>
+            </div>
+          </div>
+
+          <!-- Kontaktdetails -->
+          <div class="flex flex-col gap-4" data-animate="fade-up" data-delay="80">
+
+            <div class="relative bg-bg-warm text-ink rounded-[2rem] p-6 overflow-hidden border border-gold-200">
+              <svg class="w-10 h-10 opacity-20 mb-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z" clip-rule="evenodd"/></svg>
+              <p class="font-display italic text-[1.05rem] text-ink max-w-none">Bei uns darf jedes Kind <strong class="not-italic font-extrabold">frei spielen, neugierig sein und groß werden.</strong></p>
+            </div>
+
+            <a href="https://maps.google.com/?q=Hohenzollernstr.+24,+40211+Düsseldorf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-4 bg-ink-100 hover:bg-ink-900 hover:text-white rounded-2xl font-bold text-sm text-ink-700 transition-all" aria-label="Auf Google Maps öffnen">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-2.003 3.5-4.697 3.5-8.327a8 8 0 1 0-16 0c0 3.63 1.556 6.326 3.5 8.327a19.585 19.585 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/></svg>
+              Auf Google Maps anzeigen
+              <svg class="w-4 h-4 ml-auto opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+            </a>
+
+            <a class="inline-flex items-center gap-2 px-8 py-4 bg-coral-400 hover:bg-coral-500 disabled:opacity-60 text-white rounded-full font-extrabold text-sm transition-all hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(243,104,86,0.35)]" href="mailto:kontakt@goldschatz-kindertagespflege.de" >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.478 2.405a.75.75 0 0 0-.926.94l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.405Z"/></svg>
+              Anfrage senden
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ────────────────────────────── -->
+  <footer class="bg-ink-900 text-white/75 py-8" role="contentinfo">
+    <div class="max-w-[1180px] mx-auto px-5 md:px-8 flex items-center justify-between gap-6 flex-wrap">
+      <div>
+        <div class="flex items-center gap-3 mb-1">
+          <div class="w-[34px] h-[34px] flex items-center justify-center"><img src="./img/Goldschatz Logo.svg"></div>
+          <span class="font-display font-bold text-white">Goldschatz</span>
+        </div>
+        <p class="text-xs text-white/50">Kindertagespflege für 1–3 Jahre · Düsseldorf</p>
+      </div>
+      <nav class="flex gap-5 flex-wrap" aria-label="Footer Navigation">
+        <a href="#angebot"    class="text-sm font-semibold text-white/65 hover:text-white transition-colors">Angebot</a>
+        <a href="#paedagogik" class="text-sm font-semibold text-white/65 hover:text-white transition-colors">Pädagogik</a>
+        <a href="#inklusion"  class="text-sm font-semibold text-white/65 hover:text-white transition-colors">Inklusion</a>
+        <a href="#kontakt"    class="text-sm font-semibold text-white/65 hover:text-white transition-colors">Kontakt</a>
+      </nav>
+      <div class="flex items-center gap-4 text-xs text-white/40 flex-wrap">
+        <span>© <span id="year"></span> Kindertagespflege Goldschatz</span>
+        <a href="impressum.html" id="impressum-link"   class="text-white/50 hover:text-white transition-colors">Impressum</a>
+        <a href="datenschutz.html" id="datenschutz-link" class="text-white/50 hover:text-white transition-colors">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

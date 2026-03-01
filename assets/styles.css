@@ -1,0 +1,332 @@
+/* ============================================
+   Kindertagespflege Goldschatz – styles.css
+   Nur Custom Components + lokale Fonts
+   Tailwind übernimmt Reset & Utilities
+   ============================================ */
+
+
+/* === Lokale Fonts ================================= */
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/fraunces-v38-latin-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/fraunces-v38-latin-regular.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/nunito-sans-v19-latin-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+
+/* === Minimal Base Enhancements ===================== */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+
+:root {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-title {
+  font-family: var(--font-display);
+}
+
+/* === Accessibility ================================= */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border: 2px solid #f36856;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+:focus-visible {
+  outline: 2px solid #f36856;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+
+/* === Typography Utilities ========================== */
+
+.section-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: #1a1a2e;
+  font-size: clamp(1.75rem, 3vw + 0.75rem, 2.75rem);
+  margin-bottom: 0.75rem;
+}
+
+.pill-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px 0.75rem;
+  background: rgba(250,193,63,0.18);
+  border: 1px solid rgba(250,193,63,0.45);
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #7a5500;
+  margin-bottom: 1rem;
+}
+
+
+/* === Feature Cards ================================= */
+
+.feature-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border-color: rgba(250,193,63,0.3);
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.875rem;
+  background: linear-gradient(135deg, #ffedb3, #ffd966);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+
+/* === Gallery ======================================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
+  gap: 1rem;
+}
+
+.gallery-item--large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+  .gallery-item--large {
+    grid-column: 1 / -1;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+}
+
+.gallery-item {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+
+.gallery-item:hover figcaption,
+.gallery-item:focus-within figcaption {
+  transform: translateY(0);
+}
+
+
+/* === FAQ =========================================== */
+
+.faq-item {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #f9fafb;
+  overflow: hidden;
+  transition: border-color 150ms ease;
+}
+
+.faq-item[open] {
+  border-color: #ffd966;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a1a2e;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background: #fff9e6;
+}
+
+.faq-icon {
+  transition: transform 250ms ease;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(180deg);
+}
+
+
+/* === Form ========================================== */
+
+.form-input {
+  width: 100%;
+  padding: 13px 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 1rem;
+  font-family: "Nunito Sans", system-ui, sans-serif;
+  font-size: 0.97rem;
+  color: #1a1a2e;
+  background: white;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #fac13f;
+  box-shadow: 0 0 0 3px rgba(250,193,63,0.2);
+}
+
+.form-input.is-invalid {
+  border-color: #f36856;
+  box-shadow: 0 0 0 3px rgba(243,104,86,0.15);
+}
+
+
+/* === Mobile Drawer Fix ============================= */
+/* translate-x-0 wird nur per JS gesetzt und fehlt im Tailwind-PurgeCSS-Output */
+#mobile-drawer.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y, 0)) rotate(var(--tw-rotate, 0)) skewX(var(--tw-skew-x, 0)) skewY(var(--tw-skew-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1));
+}
+
+
+/* === Mobile Burger Animation ======================= */
+
+.mobile-menu-btn.open .burger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-btn.open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.open .burger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.burger-line {
+  transition: all 300ms ease;
+  transform-origin: center;
+}
+
+
+/* === Scroll Animations ============================= */
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
