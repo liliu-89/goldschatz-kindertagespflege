@@ -167,8 +167,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* === E-Mail-Adresse im HTML maskieren und per JS zusammensetzen ======================================== */
 document.addEventListener("DOMContentLoaded", function () {
-  const user = "kontakt";
-  const domain = "goldschatz-kindertagespflege.de";
+  const user = "goldschatz.hohenzollernstr.24";
+  const domain = "gmail.com";
   const email = user + "@" + domain;
 
   const link = document.createElement("a");
